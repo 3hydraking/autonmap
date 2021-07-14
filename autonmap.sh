@@ -32,8 +32,3 @@ then
   # Nmap scanner for devices on network range.
   sudo nmap $pn -A --stats-every 10s --append-output -oN $fileName".aggressive" $IP
 fi
-
-if if [ "${Ping^^}" == "Y" ] || [ -z "$Ping"]
-then
-  ping -c $IP
-fi
